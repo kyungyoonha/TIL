@@ -1,11 +1,11 @@
-## add 취소
+## ※ add 취소
 
 ```
 $ git status                             // add 된 파일들 확인
 $ git restore --staged git/commend.md    // commend.md 파일 상태를 Unstage로 변경
 ```
 
-## commit 취소
+## ※ commit 취소
 
 ```
 $ git log                      // commit 목록 확인
@@ -20,7 +20,7 @@ $ git reset --soft "HEAD~2"    // 최신 2개 commit 취소
 // 로컬 또는 터미널에서 ^를 거르기 때문
 ```
 
-## commit 메세지
+## ※ commit 메세지
 
 -   #### 가장 최근 commit 메시지 수정
 
@@ -45,7 +45,7 @@ $ git rebase --continue
 $ git push -f
 ```
 
-## push 취소하기
+## ※ push 취소하기
 
 -   #### 가장 최근 commit 취소하고 기존으로 되돌린 후 push(현재 작업도 지워짐)
     -   참고. reflog 복잡하면 git log => id 값으로 reset 하면 된다
