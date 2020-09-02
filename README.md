@@ -1,10 +1,14 @@
 # Today I Learnd
 
--   WEB
+### WEB
 
-    -   [JWT Token](./Web/JWT_Token.md)
-    -   [DOM vs Virtual DOM](./Web.JWT_Token.md)
+-   [JWT Token](./web/JWT_Token.md)
+-   [DOM vs Virtual DOM](./web.JWT_Token.md)
 
--   Javascript
+### Javascript
 
-    -   [test](./javascript/test.md)
+-   [test](./javascript/test.md)
+
+### GIT
+
+-   [Command](./git/command.md)
