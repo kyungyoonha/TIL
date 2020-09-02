@@ -1,9 +1,10 @@
-Today I Learnd
+# Today I Learnd
 
-## WEB
+-   WEB
 
--   [JWT Token](./Web/JWT_Token.md)
+    -   [JWT Token](./Web/JWT_Token.md)
+    -   [DOM vs Virtual DOM](./Web.JWT_Token.md)
 
-## Javascript
+-   Javascript
 
--   [test](./javascript/test.md)
+    -   [test](./javascript/test.md)
