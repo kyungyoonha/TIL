@@ -2,12 +2,12 @@
 
 ### WEB
 
--   [JWT Token](./web/JWT_Token.md)
--   [DOM vs Virtual DOM](./web.JWT_Token.md)
+-   [JWT Token](./Web/JWT_Token.md)
+-   [DOM vs Virtual DOM](./Web/DOM_vs_Virtual_DOM.md)
 
 ### Javascript
 
--   [test](./javascript/test.md)
+-   [test](./Javascript/test.md)
 
 ### GIT
 
