@@ -1,9 +1,39 @@
+## ※ Push 과정
+```
+$ git init
+$ git add . && git commit -m "커밋 내용"
+$ git log
+$ git remote add origin https://github.com/kyungyoonha/TIL
+$ git push --set-upstream origin master    // 처음
+```
+
+## ※ Clone
+```
+$ git clone https://github.com/kyungyoonha/yoon.git .
+$ npm install
+```
+
+## ※ PULL
+```
+$ git pull origin master
+```
+
+## ※ Remote
+```
+$ git remote -v
+$ git remote add origin [레포지토리 url]
+$ git remote rename [기존이름] [새로운이름]
+$ git remote set-url origin https://github.com/user/repo2.git      // 원격 저장소 변경 
+```
+
 ## ※ add 취소
 
 ```
 $ git status                             // add 된 파일들 확인
 $ git restore --staged git/commend.md    // commend.md 파일 상태를 Unstage로 변경
 ```
+
+
 
 ## ※ commit 취소
 

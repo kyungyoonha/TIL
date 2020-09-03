@@ -9,6 +9,10 @@
 
 -   [test](./Javascript/test.md)
 
+### React
+
+-   [Pros and Cons of Component design](./React/Component_design.md)
+
 ### GIT
 
--   [Command](./git/command.md)
+-   [Command](./Git/command.md)
