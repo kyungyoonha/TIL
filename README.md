@@ -9,6 +9,7 @@
 ### Javascript
 
 -   [자바스크립트 자료구조](./Javascript/javascript_1.md)
+-   [자바스크립트의 기본형 변수와 참조형 변수](./Javascript/javascript_1.md)
 
 ### React
 
