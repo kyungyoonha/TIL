@@ -7,6 +7,7 @@
 -   [HTTP 통신 vs Socket 통신](./Web/web_3.md)
 -   [비동기 서버통신의 모듈 axios, fetch 비교](./Web/web_4.md)
 -   [promise란?](./Web/web_5.md)
+-   [웹팩이란?](./Web/web_6.md)
 
 ### Javascript
 
