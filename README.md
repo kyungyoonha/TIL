@@ -8,12 +8,14 @@
 -   [비동기 서버통신의 모듈 axios, fetch 비교](./Web/web_4.md)
 -   [promise란?](./Web/web_5.md)
 -   [웹팩이란?](./Web/web_6.md)
+-   [엑세스토큰 인증 & RSA 키페어 인증](./Web/web_7.md)
 
 ### Javascript
 
 -   [자바스크립트 자료구조](./Javascript/javascript_1.md)
 -   [자바스크립트의 기본형 변수와 참조형 변수](./Javascript/javascript_2.md)
 -   [ Async Await 이란 무엇인가?](./Javascript/javascript_3.md)
+-   [ 익명함수 ](./Javascript/javascript_4.md)
 
 ### React
 
