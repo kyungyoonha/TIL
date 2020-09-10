@@ -1,5 +1,9 @@
 # Today I Learnd
 
+### Portfolio
+
+-   https://github.com/kyungyoonha/react_mission
+
 ### WEB
 
 -   [JWT Token](./Web/web_1.md)
@@ -34,3 +38,14 @@
 ### ETC
 
 -   [npm vs yarn](./Etc/etc_1.md)
+
+### Practice
+
+-   https://github.com/kyungyoonha/react_mission1_todoList
+-   https://github.com/kyungyoonha/react_mission2_GNB
+-   https://github.com/kyungyoonha/react_mission_3_4
+-   https://github.com/kyungyoonha/react_mission5
+-   https://github.com/kyungyoonha/react_mission6
+-   https://github.com/kyungyoonha/react_mission7
+-   https://github.com/kyungyoonha/practice__react-firebase-socialApp
+-   https://github.com/kyungyoonha/practice__react_firebase_Netflix-clone
