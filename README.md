@@ -9,6 +9,7 @@
 -   [JWT Token](./Web/web_1.md)
 -   [DOM vs Virtual DOM](./Web/web_2.md)
 -   [HTTP 통신 vs Socket 통신](./Web/web_3.md)
+-   [HTTP vs HTTPS / SSL 서버 인증서 암호화](./Web/web_11.md)
 -   [비동기 서버통신의 모듈 axios, fetch 비교](./Web/web_4.md)
 -   [promise란?](./Web/web_5.md)
 -   [웹팩이란?](./Web/web_6.md)
@@ -22,7 +23,7 @@
 -   [자바스크립트 자료구조](./Javascript/javascript_1.md)
 -   [자바스크립트의 기본형 변수와 참조형 변수](./Javascript/javascript_2.md)
 -   [ Async Await 이란 무엇인가?](./Javascript/javascript_3.md)
--   [ 익명함수 ](./Javascript/javascript_4.md)
+-   [ 콜백함수 & 익명함수 ](./Javascript/javascript_4.md)
 
 ### React
 
