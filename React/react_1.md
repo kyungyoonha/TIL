@@ -22,8 +22,6 @@
     -   코드들이 독립적인 단위로 패키지화되어 있어야한다.
     -   독립 배포가 가능해야한다.
     -   특정 기능을 수행하는 모듈로써 한 시스템이 종속적이지 않고 재사용 가능
-    -   작고 단단한 컴포넌트 만드는 것
-    -   컴포넌트간의 관계를 정의하고 유기적으로 연결하는 것
     -   단일책임 원칙으로 컴포넌트가 한가지 작업만 하는 것이 이상적이다.
     -   컴포넌트가 점점 커진다면 작은 서브 컴포넌트들로 분리하는 것이 좋다.
     -   앱에서 필요로하는 변경가능한 state의 최소 집합을 생각해야한다.
@@ -147,6 +145,7 @@
 
 ### 5. 참고
 
+-   https://reactjs-kr.firebaseapp.com/docs/thinking-in-react.html
 -   https://yzzzzun.tistory.com/36
 -   https://boxfoxs.tistory.com/401
 -   https://trustyoo86.github.io/react/2017/11/18/props-state-react.html
