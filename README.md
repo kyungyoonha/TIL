@@ -34,6 +34,10 @@
 -   [리액트 리렌더링 최적화](./React/react_4.md)
 -   [리액트 Hooks](./React/react_5.md)
 
+### ReactComponent
+
+-   [Example](./ReactComponents/README.md)
+
 ### GIT
 
 -   [Command](./Git/git_1.md)
@@ -41,6 +45,7 @@
 ### ETC
 
 -   [npm vs yarn](./Etc/etc_1.md)
+-   [MVVM 모델](./Etc/etc_2.md)
 
 ### Practice
 

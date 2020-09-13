@@ -1,4 +1,5 @@
 ## ※ Push 과정
+
 ```
 $ git init
 $ git add . && git commit -m "커밋 내용"
@@ -8,22 +9,25 @@ $ git push --set-upstream origin master    // 처음
 ```
 
 ## ※ Clone
+
 ```
 $ git clone https://github.com/kyungyoonha/yoon.git .
 $ npm install
 ```
 
 ## ※ PULL
+
 ```
 $ git pull origin master
 ```
 
 ## ※ Remote
+
 ```
 $ git remote -v
 $ git remote add origin [레포지토리 url]
 $ git remote rename [기존이름] [새로운이름]
-$ git remote set-url origin https://github.com/user/repo2.git      // 원격 저장소 변경 
+$ git remote set-url origin https://github.com/user/repo2.git      // 원격 저장소 변경
 ```
 
 ## ※ add 취소
@@ -32,8 +36,6 @@ $ git remote set-url origin https://github.com/user/repo2.git      // 원격 저
 $ git status                             // add 된 파일들 확인
 $ git restore --staged git/commend.md    // commend.md 파일 상태를 Unstage로 변경
 ```
-
-
 
 ## ※ commit 취소
 
@@ -99,4 +101,12 @@ $ git reset HEAD@{1}                  // 번호 선택 후 넣어줌 (0번이 �
 $ git commit -m "다시 작업 후 커밋"    // 다시 작업후 커밋
 $ git branch                          // 브랜치 이름 확인
 $ git push origin [barnch name] -f    // 경고 무시하고 push
+```
+
+## ※ env 히스토리 지우기
+
+```
+$ git rm env.local --cached
+$ git rm env.staging --cached
+$ git commit -m "Stopped tracking env.local, and env.staging"
 ```
