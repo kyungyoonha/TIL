@@ -1,21 +1,24 @@
 import React from "react";
 import { Switch, Route } from "react-router-dom";
 import routes from "./routes";
+import Layout from "./components/Layout";
 
 const App = () => {
     return (
-        <div className="app">
-            <Switch>
-                {routes.map((route) => (
-                    <Route
-                        key={route.path}
-                        path={route.path}
-                        component={route.component}
-                        exact={route.exact || false}
-                    />
-                ))}
-            </Switch>
-        </div>
+        <Switch>
+            {routes.map((route) => (
+                <Route
+                    key={route.path}
+                    path={route.path}
+                    exact={route.exact || false}
+                    render={(props) => (
+                        <Layout>
+                            <route.component {...props} />
+                        </Layout>
+                    )}
+                />
+            ))}
+        </Switch>
     );
 };
 
