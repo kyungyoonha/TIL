@@ -35,7 +35,7 @@ const ScrollInfinite = () => {
 
     const insertApiData = async () => {
         try {
-            const apiUrl = "http://localhost:3000/apiData.json";
+            const apiUrl = "http://localhost:3001/apiData.json";
             const res = await axios.get(apiUrl);
             const length = res.data.length;
 

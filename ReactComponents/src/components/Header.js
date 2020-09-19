@@ -3,7 +3,7 @@ import React from "react";
 const Header = () => {
     return (
         <div>
-            <ul class="nav nav-pills">
+            {/* <ul class="nav nav-pills">
                 <li class="nav-item">
                     <a class="nav-link active" href="#">
                         Active
@@ -51,7 +51,7 @@ const Header = () => {
                         Disabled
                     </a>
                 </li>
-            </ul>
+            </ul> */}
         </div>
     );
 };
