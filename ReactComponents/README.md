@@ -1,4 +1,4 @@
-## ※ ScrollBasic
+## # ScrollBasic
 
 -   거리 백분율 구하기
 -   scrollTop / (scrollHeight - clientHeight) \* 100
@@ -8,7 +8,7 @@
     | ------------------------------- | ------------------------------- |
 
 
-## ※ Scroll Infinite 무한 스크롤
+## # Scroll Infinite 무한 스크롤
 
 -   데이터를 가지고 올때는 startIdx 와 endIdx 인덱스를 이용하여 4개씩 가지고 오고
 -   스크롤이 90%이상 내려갈 경우 startIdx 와 endIdx 인덱스를 4개씩 업데이트 해주고 데이터를 가져옴
@@ -22,3 +22,8 @@
 
 -   react-slick 사용
     | ![img](./img/slider_1.png) |
+
+## # 애니메이션
+
+-   이동하기
+-   나타내기
