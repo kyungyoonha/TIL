@@ -5,6 +5,7 @@ import SliderBasic from './components/slider/SliderBasic'
 import Modal from './components/Modal/Modal';
 import Animation from './components/Animation';
 import Daum from "./components/daum/Daum";
+import IntersectionObserver from './components/IntersectionObserver/IntersectionObserver';
 
 export default [
     { path: "/", title: "Home", component: Home, exact: true },
@@ -14,4 +15,6 @@ export default [
     { path: "/modal", title: "Modal", component: Modal },
     { path: "/animation", title: "Animation", component: Animation },
     { path: "/daum", title: "Daum", component: Daum },
+    { path: "/observer", title: "IntersectionObserver", component: IntersectionObserver },
+    
 ];

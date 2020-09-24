@@ -4,6 +4,14 @@
 
 -   https://github.com/kyungyoonha/react_mission
 
+### Animation
+
+-   [스크롤 백분율로 나타내기](./Animation/Animation_1.md)
+-   [무한스크롤 컴포넌트 만들기](./Animation/Animation_2.md)
+-   [react-slick 슬라이드 컴포넌트](./Animation/Animation_3.md)
+-   [애니메이션 이동하기, 나타나기](./Animation/Animation_4.md)
+-   [Intersection Observer 동적 로딩](./Animation/Animation_5.md)
+
 ### WEB
 
 -   [JWT Token](./Web/web_1.md)
@@ -33,11 +41,6 @@
 -   [리액트는 라이브러리 인가 프레임 워크인가?](./React/react_3.md)
 -   [리액트 리렌더링 최적화](./React/react_4.md)
 -   [리액트 Hooks](./React/react_5.md)
-
-### ReactComponent
-
--   [스크롤 백분율로 나타내기](./ReactComponents/README.md)
--   [무한스크롤 컴포넌트 만들기](./ReactComponents/README.md)
 
 ### GIT
 
