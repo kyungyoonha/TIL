@@ -26,10 +26,13 @@ const DaumPostCode = () => {
     return (
         <div>
             <div className="card">
-                <div className="card-header bg-primary text-white">
+                <div
+                    className="card-header bg-primary text-white"
+                    ref={embedLocation}
+                >
                     <h4>※ 다음 우편번호 검색하기</h4>
                 </div>
-                <div className="card-body" ref={embedLocation}>
+                <div className="card-body">
                     <div className="label">우편번호</div>
 
                     <input

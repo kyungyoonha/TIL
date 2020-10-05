@@ -7,7 +7,7 @@
 
 -   [소스보기](../ReactComponents/src/components/scroll/ScrollBasic.js)
 
-    | 예제 | ![img](./img/ScrollBasic_3.png) |
+    | 예제 | ![img](./img/Animation_1_2.png) |
     | ---- | ------------------------------- |
 
 
@@ -15,6 +15,6 @@
 
 -   https://medium.com/@ghur2002/react%EC%97%90%EC%84%9C-infinite-scroll-%EA%B5%AC%ED%98%84%ED%95%98%EA%B8%B0-128d64ea24b5
 
-    | 참고 | ![img](./img/ScrollBasic_1.png) |
+    | 참고 | ![img](./img/Animation_1_1.png) |
     | ---- | ------------------------------- |
 
