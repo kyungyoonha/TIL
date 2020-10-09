@@ -44,6 +44,8 @@
 -   [리액트는 라이브러리 인가 프레임 워크인가?](./React/react_3.md)
 -   [리액트 리렌더링 최적화](./React/react_4.md)
 -   [리액트 Hooks](./React/react_5.md)
+-   [ContextAPI](./React/react_6.md)
+-   [Ducks 패턴](./React/react_7.md)
 
 ### GIT
 
