@@ -1,4 +1,4 @@
-## # Ducks 패턴 [(링크)](./src/contexts/post.js)
+## # Ducks 패턴
 
 ### 사용하는 이유?
 
