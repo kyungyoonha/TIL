@@ -36,6 +36,7 @@
 -   [Ajax란?](./Javascript/javascript_5.md)
 -   [콜백함수 & 익명함수](./Javascript/javascript_4.md)
 -   [Object.entries()](./Javascript/javascript_6.md)
+-   [원시타입 Symbol](./Javascript/javascript_7.md)
 
 ### React
 
