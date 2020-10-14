@@ -48,6 +48,11 @@
 -   [ContextAPI](./React/react_6.md)
 -   [Ducks 패턴](./React/react_7.md)
 -   [Immer 라이브러리](./React/react_8.md)
+-   [환경변수](./React/react_10.md)
+
+### NodeJS
+
+-   [Sequlize db url로 접속하기](./NodeJS/nodejs_1.md)
 
 ### GIT
 
