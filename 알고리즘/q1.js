@@ -63,11 +63,33 @@ const validAnagram = (text1, text2) => {
 /* =======================================================================
 3. Given a sorted array of integers, write a function called search, that accepts a value and returns the index where the value passed to the function is located.
 If the value is not found, return -1
-
+바이너리 서치
 search([1,2,3,4,5,6], 4) // 3
 search([1,2,3,4,5,6], 6) // 5
 search([1,2,3,4,5,6], 11) // -1
 =======================================================================*/
+function search(arr, num) {
+    if (arr.length === 1) return 0;
+
+    let minIdx = 0;
+    let maxIdx = arr.length - 1;
+    let midIdx;
+
+    while (minIdx <= maxIdx) {
+        midIdx = Math.floor((minIdx + maxIdx) / 2);
+        if (arr[midIdx] === num) {
+            return midIdx;
+        } else if (arr[midIdx] < num) {
+            minIdx += 1;
+        } else {
+            maxIdx -= 1;
+        }
+    }
+    return -1;
+}
+// console.log(search([1, 2, 3, 4, 5, 6], 4)); // 3
+// console.log(search([1, 2, 3, 4, 5, 6], 6)); // 5
+// console.log(search([1, 2, 3, 4, 5, 6], 11)); // -1
 
 /* =======================================================================
 4. Write function called sumZero which accepts a sorted array of integers.
@@ -94,9 +116,9 @@ const sumZero = (array) => {
     }
 };
 
-console.log(sumZero([-3, -2, -1, 0, 1, 2, 3])); // [-3, -3]
-console.log(sumZero([-2, 0, 1, 3])); // undefined
-console.log(sumZero([1, 2, 3])); // undefined
+// console.log(sumZero([-3, -2, -1, 0, 1, 2, 3])); // [-3, -3]
+// console.log(sumZero([-2, 0, 1, 3])); // undefined
+// console.log(sumZero([1, 2, 3])); // undefined
 /* =======================================================================
 5. Implement a function called countUniqueValues,
 which accepts a sorted array, and counts the unique valeus in the array
@@ -107,14 +129,38 @@ countUniqueValues([1,2,3,4,4,4,7,7,12,12,13]) // 7
 countUniqueValues([-2,-1,-1,0,1]) // 4
 countUniqueValues([]) // 0
 =======================================================================*/
-// https://www.udemy.com/course/js-algorithms-and-data-structures-masterclass/learn/quiz/4410612#overview
-const countUniqueValues = (arr) => {
-    if (arr.length <= 1) return arr.length;
 
-    let p = 1;
-    for (var item of arr) {
+function countUniqueValues(arr) {
+    const countObj = {};
+
+    for (let i = 0, len = arr.length; i < len; i++) {
+        // countObj = countObj[arr[i]]
+        countObj[arr[i]] = (countObj[arr[i]] || 0) + 1;
     }
-};
+    console.log(countObj);
+    return Object.keys(countObj.length);
+    //return Object.keys(countObj.length);
+}
+
+countUniqueValues([1, 1, 1, 1, 2]); // 2
+
+// https://www.udemy.com/course/js-algorithms-and-data-structures-masterclass/learn/quiz/4410612#overview
+// const countUniqueValues = (array) => {
+//     if (array.length < 2) return array.length;
+
+//     var p1 = 0;
+//     for (let p2 = 1; p2 < array.length; p2++) {
+//         if (array[p1] !== array[p2]) {
+//             p1++;
+//             array[p1] = array[p2];
+//         }
+//     }
+//     return p1 + 1;
+// };
+// console.log(countUniqueValues([1, 1, 1, 1, 2])); // 2
+// console.log(countUniqueValues([1, 2, 3, 4, 4, 4, 7, 7, 12, 12, 13])); // 7
+// console.log(countUniqueValues([-2, -1, -1, 0, 1])); // 4
+// console.log(countUniqueValues([])); // 0
 
 /* =======================================================================
 6. Write a function called averagePair.
@@ -126,6 +172,20 @@ averagePair([1,3,3,5,6,7,10,12,19], 8) // true
 averagePair([-1,0,3,4,5,6], 4.1) // false
 averagePair([], 4) // false
 =======================================================================*/
+function averagePair(arr, avg) {
+    let start = 0;
+    let end = arr.length - 1;
+
+    let tempAvg;
+    while (state < end) {
+        tempAvg = (arr[start] + arr[end]) / 2;
+
+        if (tempAvg === avg) return true;
+        else if (tempAvg < avg) start++;
+        else end--;
+    }
+    return false;
+}
 
 /* =======================================================================
 7. Write a function called maxSubarraySum which accepts an array of integers and a number called n.
@@ -137,3 +197,23 @@ maxSubarraySum([4,2,1,6,2],4) // 13
 maxSubarraySum([4,2,1,6], 1) // 6
 maxSubarraySum([], 4) // null
 =======================================================================*/
+// function maxSubarraySum(arr, num) {
+//     let maxSum = 0;
+//     let tempSum = 0;
+//     if (arr.length < num) return null;
+//     for (let i = 0; i < num; i++) {
+//         maxSum += arr[i];
+//     }
+//     tempSum = maxSum;
+//     for (let i = num; i < arr.length; i++) {
+//         tempSum = tempSum - arr[i - num] + arr[i];
+//         maxSum = Math.max(maxSum, tempSum);
+//     }
+//     return maxSum;
+// }
+
+// console.log(maxSubarraySum([1, 2, 5, 2, 8, 1, 5], 2)); //10
+// console.log(maxSubarraySum([1, 2, 5, 2, 8, 1, 5], 4)); // 17
+// console.log(maxSubarraySum([4, 2, 1, 6, 2], 4)); // 13
+// console.log(maxSubarraySum([4, 2, 1, 6], 1)); // 6
+// console.log(maxSubarraySum([], 4)); // null
