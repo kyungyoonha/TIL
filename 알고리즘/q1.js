@@ -63,7 +63,7 @@ const validAnagram = (text1, text2) => {
 /* =======================================================================
 3. Given a sorted array of integers, write a function called search, that accepts a value and returns the index where the value passed to the function is located.
 If the value is not found, return -1
-바이너리 서치
+
 search([1,2,3,4,5,6], 4) // 3
 search([1,2,3,4,5,6], 6) // 5
 search([1,2,3,4,5,6], 11) // -1
@@ -87,6 +87,7 @@ function search(arr, num) {
     }
     return -1;
 }
+//바이너리 서치
 // console.log(search([1, 2, 3, 4, 5, 6], 4)); // 3
 // console.log(search([1, 2, 3, 4, 5, 6], 6)); // 5
 // console.log(search([1, 2, 3, 4, 5, 6], 11)); // -1
@@ -131,32 +132,18 @@ countUniqueValues([]) // 0
 =======================================================================*/
 
 function countUniqueValues(arr) {
-    const countObj = {};
+    if (arr.length < 2) return arr.length;
 
-    for (let i = 0, len = arr.length; i < len; i++) {
-        // countObj = countObj[arr[i]]
-        countObj[arr[i]] = (countObj[arr[i]] || 0) + 1;
+    var point = 0;
+    for (let i = 1, len = arr.length; i < len; i++) {
+        if (arr[point] !== arr[i]) {
+            point++;
+            arr[point] = arr[i];
+        }
     }
-    console.log(countObj);
-    return Object.keys(countObj.length);
-    //return Object.keys(countObj.length);
+    return point + 1;
 }
 
-countUniqueValues([1, 1, 1, 1, 2]); // 2
-
-// https://www.udemy.com/course/js-algorithms-and-data-structures-masterclass/learn/quiz/4410612#overview
-// const countUniqueValues = (array) => {
-//     if (array.length < 2) return array.length;
-
-//     var p1 = 0;
-//     for (let p2 = 1; p2 < array.length; p2++) {
-//         if (array[p1] !== array[p2]) {
-//             p1++;
-//             array[p1] = array[p2];
-//         }
-//     }
-//     return p1 + 1;
-// };
 // console.log(countUniqueValues([1, 1, 1, 1, 2])); // 2
 // console.log(countUniqueValues([1, 2, 3, 4, 4, 4, 7, 7, 12, 12, 13])); // 7
 // console.log(countUniqueValues([-2, -1, -1, 0, 1])); // 4
@@ -197,23 +184,75 @@ maxSubarraySum([4,2,1,6,2],4) // 13
 maxSubarraySum([4,2,1,6], 1) // 6
 maxSubarraySum([], 4) // null
 =======================================================================*/
-// function maxSubarraySum(arr, num) {
-//     let maxSum = 0;
-//     let tempSum = 0;
-//     if (arr.length < num) return null;
-//     for (let i = 0; i < num; i++) {
-//         maxSum += arr[i];
-//     }
-//     tempSum = maxSum;
-//     for (let i = num; i < arr.length; i++) {
-//         tempSum = tempSum - arr[i - num] + arr[i];
-//         maxSum = Math.max(maxSum, tempSum);
-//     }
-//     return maxSum;
-// }
+
+function maxSubarraySum(arr, num) {
+    let maxSum = 0;
+    let tempSum = 0;
+    if (arr.length < num) return null;
+    for (let i = 0; i < num; i++) {
+        maxSum += arr[i];
+    }
+    tempSum = maxSum;
+    for (let i = num; i < arr.length; i++) {
+        tempSum = tempSum - arr[i - num] + arr[i];
+        maxSum = Math.max(maxSum, tempSum);
+    }
+    return maxSum;
+}
 
 // console.log(maxSubarraySum([1, 2, 5, 2, 8, 1, 5], 2)); //10
 // console.log(maxSubarraySum([1, 2, 5, 2, 8, 1, 5], 4)); // 17
 // console.log(maxSubarraySum([4, 2, 1, 6, 2], 4)); // 13
 // console.log(maxSubarraySum([4, 2, 1, 6], 1)); // 6
 // console.log(maxSubarraySum([], 4)); // null
+
+function maxSubarraySum(arr, num) {
+    if (arr.length < num) return null;
+    let maxSum = 0;
+    let tempSum = 0;
+    for (let i = 0; i < num; i++) {
+        maxSum += arr[i];
+    }
+    //console.log(maxSum);
+    tempSum = maxSum;
+    for (let i = num, len = arr.length; i < len; i++) {
+        tempSum = tempSum - arr[i - num] + arr[i];
+
+        maxSum = Math.max(maxSum, tempSum);
+    }
+    return maxSum;
+}
+
+//console.log(maxSubarraySum([100, 200, 300, 400], 2));
+//console.log(maxSubarraySum([1, 4, 2, 10, 23, 3, 1, 0, 20], 4));
+//console.log(maxSubarraySum([-3, 4, 0, -2, 6, -1], 2));
+//console.log(maxSubarraySum([3, -2, 7, -4, 1, -1, 4, -2, 1], 2));
+//console.log(maxSubarraySum([2, 3], 2));
+
+// let a = 12;
+// let b = a;
+// b = "1";
+// console.log(a);
+// console.log(b);
+
+function minSubArrayLen(arr, num) {
+    let sorted = arr.sort((a, b) => a - b);
+    let p = arr.length - 1;
+    let maxSum = sorted[p];
+    while (p >= 0) {
+        if (maxSum >= num) return arr.length - p;
+        else {
+            p -= 1;
+            maxSum += arr[p];
+        }
+    }
+    return 0;
+}
+
+// console.log(minSubArrayLen([2, 3, 1, 2, 4, 3], 7));
+// console.log(minSubArrayLen([2, 1, 6, 5, 4], 9));
+// console.log(minSubArrayLen([3, 1, 7, 11, 2, 9, 8, 21, 62, 33, 19], 52));
+// console.log(minSubArrayLen([1, 4, 16, 22, 5, 7, 8, 9, 10], 39));
+// console.log(minSubArrayLen([1, 4, 16, 22, 5, 7, 8, 9, 10], 55));
+// console.log(minSubArrayLen([4, 3, 3, 8, 1, 2, 3], 11));
+// console.log(minSubArrayLen([1, 4, 16, 22, 5, 7, 8, 9, 10], 95));
